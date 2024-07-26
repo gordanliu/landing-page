@@ -2417,6 +2417,15 @@ input, select, textarea {
 		}
 
 /* Image */
+	
+	.banner-image {
+		border-radius: 100%;
+		width: 30%;
+	}
+
+	.banner-right {
+		width: 50%;
+	}
 
 	.image {
 		border-radius: 5px;
@@ -3386,8 +3395,28 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		padding: 10em 0 4.75em 0 ;
+		padding: 10em 0 3em 0 ;
 	}
+
+		.inner.banner {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 80%; /* Adjust width as needed */
+			max-width: 75em; /* Adjust max-width as needed */
+			margin: 0 auto;
+		}
+		
+		.banner-image {
+			flex: 0 0 32%; /* 40% of the container's width */
+			border-radius: 50%; /* Optional: for circular image */
+		}
+		
+
+		.banner-right {
+			flex: 0 0 62%; /* 60% of the container's width */
+			text-align: left;
+		}
 
 		#banner .inner {
 			margin: 0 auto;
